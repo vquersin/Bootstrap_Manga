@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top justify-content-between">
+    <a class="navbar-brand text-white ps-3" href="#">Carousel-Sama</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse d-flex flex-row justify-content-between align-items-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto flex-row d-md-flex">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Scans</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white disabled" href="#">Anime</a>
+        </li>
+      </ul>
+      <form class="w-25 form-inline d-flex flex-row my-2 my-lg-0 py-1 pe-3">
+        <input class="form-control mr-sm-2" type="search" placeholder="Yamete Kudasai ..." aria-label="Search">
+        <button class="btn w-50 btn-light btn-outline-success fw-bold my-2 mx-1 my-sm-0" type="submit">Oni-chan !</button>
+      </form>
+    </div>
+  </nav>
+      <!-- carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators col">
+          <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner bg-secondary">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/Fond-Décran-Naruto-Computer.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block text-center" id="desc_img_caroussel">
+              <h5 class="display-3 fw-bold">Naruto</h5>
+              <p class="lead">Le ninja le plus puissant de Konoha à l'époque, Minato Namikaze, a réussi à sceller ce démon dans le corps de Naruto. C'est ainsi que douze ans plus tard, Naruto rêve de devenir le plus grand Hokage de Konoha afin que tous le reconnaissent à sa juste valeur.</p>
+              <button class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" type="submit">Learn more</button>
+            </div>          
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/onepiece.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block text-center" id="desc_img_caroussel">
+              <h5 class="display-3 fw-bold">One Piece</h5>
+              <p class="lead">Monkey D. Luffy rêve de retrouver ce trésor légendaire et de devenir le nouveau "Roi des Pirates". Après avoir mangé un fruit du démon, il possède un pouvoir lui permettant de réaliser son rêve. Il lui faut maintenant trouver un équipage pour partir à l'aventure !</p>
+              <button class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" type="submit">Learn more</button>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 object-fit-cover" src="./img/Fairy-Tail.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block text-center" id="desc_img_caroussel">
+              <h5 class="display-3 fw-bold">Fairy Tail</h5>
+              <p class="lead">Lucy, jeune femme, rêve de devenir magicienne. Pour y arriver, elle doit devenir membre d'une guilde, la plus prestigieuse est Fairy Tail. C'est alors qu'elle rencontre Natsu, magicien du feu et membre de la célèbre guilde. Il va l'introduire auprès de ses camarades magiciens, où de nombreuses tâches les attendent …</p>
+              <button class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" type="submit">Learn more</button>
+            </div> 
+          </div>
+        </div>
+        <a class="carousel-control-prev" id="bg_Controler_Prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only fw-bold">Previous</span>
+        </a>
+        <a class="carousel-control-next" id="bg_Controler_Next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only fw-bold">Next</span>
+        </a>
+      </div>
+    <section class="container-fluid mx-2">
+      <div class="row justify-content-center align-items-center text-center h-100 my-5">
+        <div class="col-3">
+          <img class="rounded-circle w-25" type="width: 80%;" src="./img/Fond-Décran-Naruto_pill.jpg"  alt="">
+          <p class="display-5">Naruto</p>
+          <p >Le ninja le plus puissant de Konoha à l'époque, Minato Namikaze, a réussi à sceller ce démon dans le corps de Naruto. C'est ainsi que douze ans plus tard, Naruto rêve de devenir le plus grand Hokage de Konoha afin que tous le reconnaissent à sa juste valeur.</p>
+          <button class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" type="submit">Learn more</button>
+        </div>
+        <div class="col-3">
+          <img class="rounded-circle w-25" src="./img/onepiece_pill.jpg"  alt="">
+          <p class="display-5">One Piece</p>
+          <p >Monkey D. Luffy rêve de retrouver ce trésor légendaire et de devenir le nouveau "Roi des Pirates". Après avoir mangé un fruit du démon, il possède un pouvoir lui permettant de réaliser son rêve. Il lui faut maintenant trouver un équipage pour partir à l'aventure !</p>
+          <button class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" type="submit">Learn more</button>
+        </div>
+        <div class="col-3">
+          <img class="rounded-circle w-25" src="./img/Fairy-Tail_pill.jpg"  alt="">
+          <p class="display-5">Fairy Tail</p>
+          <p >Lucy, jeune femme, rêve de devenir magicienne. Pour y arriver, elle doit devenir membre d'une guilde, la plus prestigieuse est Fairy Tail. C'est alors qu'elle rencontre Natsu, magicien du feu et membre de la célèbre guilde. Il va l'introduire auprès de ses camarades magiciens, où de nombreuses tâches les attendent …</p>
+          <button class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" type="submit">Learn more</button>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid w-75 d-flex flex-column justify-content-center align-items-center gy-5 my-5 bg-light">
+      <div class="d-flex flex-row my-5 justify-content-center mx-3">
+        <div class="col-5 d-flex flex-column justify-content-center pb-5 mx-5">
+          <p class="display-6">Réincarné dans un autre monde, aux pouvoirs bien trop cheatés !</p>
+          <p>
+            Un NEET vient d'être chassé de chez ses parents. Ayant le moral au plus bas, il pense au suicide. Jusqu'au jour où il aperçoit une ancienne camarade de classe sur le point de se faire renverser. D'un geste héroïque, il la pousse et se fait renverser à sa place.
+          </p>
+        </div>
+        <img class="img-fluid w-25" src="./img/MushokuTensei.jpg" alt="">
+      </div>
+      <div class="bg-light border-top border-secondary w-75 py-1"></div>
+      <div class="d-flex flex-row my-5 justify-content-center mx-3">
+        <img class="img-fluid w-25" src="./img/bofuri.jpg" alt="">
+        <div class="col-5 d-flex flex-column justify-content-center pb-5 mx-5">
+          <p class="display-6">Une joueuse pas comme les autres, full def et sorts en folie ... Just Mapple !</p>
+          <p>
+            Un nouveau gros joueur est apparu sur le fameux VRMMO NewWorld Online ! Aucune attaque ne peut l'atteindre, et grâce à son talent de poison létal, les monstres comme les autres joueurs se font tous démolir !
+          </p>
+        </div>
+      </div>
+      <div class="bg-light border-top border-secondary w-100 py-1"></div>
+    </section>
+    
+
+
+
+
+      <!-- SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
