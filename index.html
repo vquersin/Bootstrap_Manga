@@ -35,34 +35,34 @@
   </nav>
       <!-- carousel -->
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators col">
-          <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-          <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        <ul class="carousel-indicators text-white list-unstyled col">
+          <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true"></li>
+          <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
         </ul>
         <div class="carousel-inner bg-secondary">
           <div class="carousel-item active">
             <img class="d-block w-100" src="./img/Fond-Décran-Naruto-Computer.jpg" alt="First slide">
-            <div class="carousel-caption d-none d-md-block text-center" id="desc_img_caroussel">
+            <div class="carousel-caption d-md-block text-center" id="desc_img_caroussel">
               <h5 class="display-3 fw-bold">Naruto</h5>
-              <p class="lead">Le ninja le plus puissant de Konoha à l'époque, Minato Namikaze, a réussi à sceller ce démon dans le corps de Naruto. C'est ainsi que douze ans plus tard, Naruto rêve de devenir le plus grand Hokage de Konoha afin que tous le reconnaissent à sa juste valeur.</p>
-              <button class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" type="submit">Learn more</button>
+              <p class="lead d-none d-md-block">Le ninja le plus puissant de Konoha à l'époque, Minato Namikaze, a réussi à sceller ce démon dans le corps de Naruto. C'est ainsi que douze ans plus tard, Naruto rêve de devenir le plus grand Hokage de Konoha afin que tous le reconnaissent à sa juste valeur.</p>
+              <a class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" href="#carouselLearn" role="button">Learn more</a>
             </div>          
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="./img/onepiece.jpg" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block text-center" id="desc_img_caroussel">
+            <div class="carousel-caption d-md-block text-center" id="desc_img_caroussel">
               <h5 class="display-3 fw-bold">One Piece</h5>
-              <p class="lead">Monkey D. Luffy rêve de retrouver ce trésor légendaire et de devenir le nouveau "Roi des Pirates". Après avoir mangé un fruit du démon, il possède un pouvoir lui permettant de réaliser son rêve. Il lui faut maintenant trouver un équipage pour partir à l'aventure !</p>
-              <button class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" type="submit">Learn more</button>
+              <p class="lead d-none d-md-block">Monkey D. Luffy rêve de retrouver ce trésor légendaire et de devenir le nouveau "Roi des Pirates". Après avoir mangé un fruit du démon, il possède un pouvoir lui permettant de réaliser son rêve. Il lui faut maintenant trouver un équipage pour partir à l'aventure !</p>
+              <a class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" href="#carouselLearn" role="button">Learn more</a>
             </div> 
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 object-fit-cover" src="./img/Fairy-Tail.jpg" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block text-center" id="desc_img_caroussel">
+            <div class="carousel-caption  d-md-block text-center" id="desc_img_caroussel">
               <h5 class="display-3 fw-bold">Fairy Tail</h5>
-              <p class="lead">Lucy, jeune femme, rêve de devenir magicienne. Pour y arriver, elle doit devenir membre d'une guilde, la plus prestigieuse est Fairy Tail. C'est alors qu'elle rencontre Natsu, magicien du feu et membre de la célèbre guilde. Il va l'introduire auprès de ses camarades magiciens, où de nombreuses tâches les attendent …</p>
-              <button class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" type="submit">Learn more</button>
+              <p class="lead d-none d-md-block">Lucy, jeune femme, rêve de devenir magicienne. Pour y arriver, elle doit devenir membre d'une guilde, la plus prestigieuse est Fairy Tail. C'est alors qu'elle rencontre Natsu, magicien du feu et membre de la célèbre guilde. Il va l'introduire auprès de ses camarades magiciens, où de nombreuses tâches les attendent …</p>
+              <a class="btn btn-primary btn-outline-light fw-bold my-2 mx-2 my-sm-0" href="#carouselLearn" role="button">Learn more</a>
             </div> 
           </div>
         </div>
@@ -77,8 +77,9 @@
       </div>
 
       <!-- Learn about carousel content -->
-
-    <section class="container-fluid mx-2">
+    <div id="carouselLearn"></div>
+    <hr class="border-0">
+    <section  class="container-fluid mx-2">
       <div class="row justify-content-center align-items-center text-center h-100 my-5">
         <div class="card d-flex justify-content-center align-items-center border-0" style="width: 28rem;">
           <img class="rounded-circle w-25" type="width: 80%;" src="./img/Fond-Décran-Naruto_pill.jpg"  alt="">
